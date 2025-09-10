@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Banking Suite" parallel="tests" thread-count="3">
+  <test name="Banking Tests Chrome">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.LoginTest"/>
+      <class name="tests.LoanTest"/>
+      <class name="tests.TransferTest"/>
+      <class name="tests.TransactionTest"/>
+    </classes>
+  </test>
+</suite>
